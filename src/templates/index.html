@@ -7,7 +7,26 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12" id="formdiv">
-          <p>form should go here</p>
+          <form class="form-group">
+            <label for="startingMoney">Please enter however much of your starting currency you'd like to convert.</label>
+            <input class="form-control" type=number id="startingMoney" placeholder="Money please!"></input>
+            <label for="startingCountry">Converting from:</label>
+            <select class="form-control" id= "startingCountry">
+              <option value="usd">Dollars (American)</option>
+              <option value="euro">Euros</option>
+              <option value="gbp">British Pounds</option>
+              <option value="aud">Dollars (Australian)</option>
+              <option value="cad">Dollars (Canadian)</option>
+            </select>
+            <label for="endingCountry">to:</label>
+            <select class="form-control" id="endingCountry">
+              <option value="usd">Dollars (American)</option>
+              <option value="euro">Euros</option>
+              <option value="gbp">British Pounds</option>
+              <option value="aud">Dollars (Australian)</option>
+              <option value="cad">Dollars (Canadian)</option>
+            </select>
+          </form>
         </div>
       </div>
       <div class="row">
@@ -15,6 +34,6 @@
           <p>output will go here</p>
         </div>
       </div>
-    </div>  
+    </div>
   </body>
 </html>
