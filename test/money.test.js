@@ -156,13 +156,19 @@ describe ("Money", function() {
 
   describe("hotelCheck", function(){
     it("should check how many nights one can stay at an $89-equivalent hotel with the converted sum, for dollars", function(){
-      expect(Money.hotelCheck(180, "usd")).to.equal(2);
+      expect(Money.hotelCheck(200, "usd")).to.equal(2);
     });
   });
 
   describe("hotelCheck", function(){
     it("should check how many nights one can stay at an $89-equivalent hotel with the converted sum, for pounds", function(){
       expect(Money.hotelCheck(200, "gbp")).to.equal(3);
+    });
+  });
+
+  describe("hotelCheck", function(){
+    it("should check how many nights one can stay at an $89-equivalent hotel with the converted sum, for euros", function(){
+      expect(Money.hotelCheck(200, "euro")).to.equal(2);
     });
   });
 
