@@ -28,4 +28,10 @@ describe ("Money", function() {
     });
   });
 
+  describe("moneyTrade", function(){
+    it("should convert dollars to australian dollars", function(){
+      expect(Money.moneyTrade(1, "usdtoaud")).to.equal(1.27);
+    });
+  });
+
 })
