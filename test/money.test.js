@@ -172,4 +172,16 @@ describe ("Money", function() {
     });
   });
 
+  describe("hotelCheck", function(){
+    it("should check how many nights one can stay at an $89-equivalent hotel with the converted sum, for australian dollars", function(){
+      expect(Money.hotelCheck(200, "aud")).to.equal(1);
+    });
+  });
+
+  describe("hotelCheck", function(){
+    it("should check how many nights one can stay at an $89-equivalent hotel with the converted sum, for canadian dollars", function(){
+      expect(Money.hotelCheck(200, "cad")).to.equal(1);
+    });
+  });
+
 })
