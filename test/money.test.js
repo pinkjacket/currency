@@ -130,6 +130,10 @@ describe ("Money", function() {
     });
   });
 
-  
+  describe("moneySign", function(){
+    it("should attach a pound sign to a number that has been converted to pounds", function(){
+      expect(Money.moneySign(1, "pound")).to.equal("£1");
+    });
+  });
 
 })
