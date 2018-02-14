@@ -136,4 +136,24 @@ describe ("Money", function() {
     });
   });
 
+  describe("moneySign", function(){
+    it("should attach a euro sign to a number that has been converted to euros", function(){
+      expect(Money.moneySign(1, "euro")).to.equal("€1");
+    });
+  });
+
+  describe("moneySign", function(){
+    it("should attach an australian dollar sign to a number that has been converted to australian dollars", function(){
+      expect(Money.moneySign(1, "australian")).to.equal("A$1");
+    });
+  });
+
+  describe("moneySign", function(){
+    it("should attach a canadian dollar sign to a number that has been converted to canadian dollars", function(){
+      expect(Money.moneySign(1, "canadian")).to.equal("C$1");
+    });
+  });
+
+
+
 })
