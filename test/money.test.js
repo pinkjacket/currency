@@ -76,4 +76,24 @@ describe ("Money", function() {
     });
   });
 
+  describe("moneyTrade", function(){
+    it("should convert euros to canadian dollars", function(){
+      expect(Money.moneyTrade(1, "eurotocad")).to.equal(1.56);
+    });
+  });
+
+  describe("moneyTrade", function(){
+    it("should convert canadian dollars to euros", function(){
+      expect(Money.moneyTrade(1, "cadtoeuro")).to.equal(.64);
+    });
+  });
+
+  describe("moneyTrade", function(){
+    it("should convert pounds to australian dollars", function(){
+      expect(Money.moneyTrade(1, "gbptoaud")).to.equal(1.76);
+    });
+  });
+
+
+
 })
