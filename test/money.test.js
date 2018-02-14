@@ -10,4 +10,10 @@ describe ("Money", function() {
     });
   });
 
+  describe("moneyTrade", function(){
+    it("should convert pounds to dollars", function(){
+      expect(Money.moneyTrade(1, "gbptousd")).to.equal(1.39);
+    });
+  });
+
 })
