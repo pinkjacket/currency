@@ -1,4 +1,5 @@
 import { xrate } from "./exchangerates.js";
+import { symbol } from "./symbol.js";
 
 export function moneyTrade(amount, conversion){
   let firstreturn = amount * xrate[conversion];
