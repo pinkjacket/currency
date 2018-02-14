@@ -94,6 +94,34 @@ describe ("Money", function() {
     });
   });
 
+  describe("moneyTrade", function(){
+    it("should convert australian dollars to pounds", function(){
+      expect(Money.moneyTrade(1, "audtogbp")).to.equal(.57);
+    });
+  });
 
+  describe("moneyTrade", function(){
+    it("should convert pounds to canadian dollars", function(){
+      expect(Money.moneyTrade(1, "gbptocad")).to.equal(1.75);
+    });
+  });
+
+  describe("moneyTrade", function(){
+    it("should convert canadian dollars to pounds", function(){
+      expect(Money.moneyTrade(1, "cadtogbp")).to.equal(.57);
+    });
+  });
+
+  describe("moneyTrade", function(){
+    it("should convert australian dollars to canadian dollars", function(){
+      expect(Money.moneyTrade(1, "audtocad")).to.equal(.99);
+    });
+  });
+
+  describe("moneyTrade", function(){
+    it("should convert canadian dollars to australian dollars", function(){
+      expect(Money.moneyTrade(1, "cadtoaud")).to.equal(1.01);
+    });
+  });
 
 })
