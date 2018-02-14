@@ -126,8 +126,10 @@ describe ("Money", function() {
 
   describe("moneySign", function(){
     it("should attach a dollar sign to a number that has been converted to dollars", function(){
-      expect(Money.moneySign(1, "toDollars")).to.equal("$1");
-    })
-  })
+      expect(Money.moneySign(1, "dollar")).to.equal("$1");
+    });
+  });
+
+  
 
 })

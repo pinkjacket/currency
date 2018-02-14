@@ -6,3 +6,8 @@ export function moneyTrade(amount, conversion){
   let rounded = Math.round((firstreturn + 0.00001) * 100)/100;
   return rounded;
 }
+
+export function moneySign(amount, csign){
+  let newmoney = symbol[csign] + amount.toFixed();
+  return newmoney;
+}
