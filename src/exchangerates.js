@@ -19,6 +19,10 @@ export const xrate = {
   "gbptocad": 1.74650,
   "cadtogbp": .572572,
   "audtocad": .989730,
-  "cadtoaud": 1.01038
-  
+  "cadtoaud": 1.01038,
+  "usdtousd": 1,
+  "gbptogbp": 1,
+  "eurotoeuro": 1,
+  "audtoaud": 1,
+  "cadtocad": 1
 }
