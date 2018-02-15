@@ -10,7 +10,7 @@
           <form class="form-horizontal" id="cashForm">
             <div class="form-group">
               <label for="startingMoney">Please enter however much of your starting currency you'd like to convert.</label>
-              <input class="form-control" type=number id="startingMoney" placeholder="Money please!"></input>
+              <input class="form-control" type=number id="startingMoney" placeholder="Money please!" min=0></input>
               <label for="startingCountry">Converting from:</label>
               <select class="form-control" id= "startingCountry">
                 <option value="usd">Dollars (American)</option>
@@ -32,11 +32,13 @@
           </form>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-12" id="moneyoutput"></div>
-      </div>
-      <div class="row">
-        <div class="col-md-12" id="hoteloutput"></div>
+      <div class="outputwrapper">
+        <div class="row">
+          <div class="col-md-12" id="moneyoutput"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-12" id="hoteloutput"></div>
+        </div>
       </div>
     </div>
   </body>

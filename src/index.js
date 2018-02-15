@@ -21,7 +21,8 @@ $(document).ready(function(){
     let hotelstay = Money.hotelCheck(moneyreturn, country2);
 
     //output here
+    $(".outputwrapper").show();
     $("#moneyoutput").text(moneytyped);
-    $("#hoteloutput").text("With the amount you have, you can afford a " + hotelstay + "-day hotel stay. Have fun!")
+    $("#hoteloutput").text("With the amount you have, you can afford a " + hotelstay + "-day hotel stay. Have fun!");
   })
 })

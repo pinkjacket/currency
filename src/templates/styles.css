@@ -1,0 +1,8 @@
+body{
+  background-color: #66ff99;
+}
+
+.outputwrapper{
+  background-color: lightgreen;
+  display: none;
+}
