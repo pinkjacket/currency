@@ -126,13 +126,13 @@ describe ("Money", function() {
 
   describe("moneySign", function(){
     it("should attach a dollar sign to a number that has been converted to dollars", function(){
-      expect(Money.moneySign(1, "dollar")).to.equal("$1");
+      expect(Money.moneySign(1, "usd")).to.equal("$1");
     });
   });
 
   describe("moneySign", function(){
     it("should attach a pound sign to a number that has been converted to pounds", function(){
-      expect(Money.moneySign(1, "pound")).to.equal("£1");
+      expect(Money.moneySign(1, "gbp")).to.equal("£1");
     });
   });
 
@@ -144,13 +144,13 @@ describe ("Money", function() {
 
   describe("moneySign", function(){
     it("should attach an australian dollar sign to a number that has been converted to australian dollars", function(){
-      expect(Money.moneySign(1, "australian")).to.equal("A$1");
+      expect(Money.moneySign(1, "aud")).to.equal("A$1");
     });
   });
 
   describe("moneySign", function(){
     it("should attach a canadian dollar sign to a number that has been converted to canadian dollars", function(){
-      expect(Money.moneySign(1, "canadian")).to.equal("C$1");
+      expect(Money.moneySign(1, "cad")).to.equal("C$1");
     });
   });
 

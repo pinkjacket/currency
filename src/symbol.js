@@ -1,8 +1,8 @@
 export const symbol = {
 
-  "dollar": "$",
+  "usd": "$",
   "euro": "€",
-  "australian": "A$",
-  "pound": "£",
-  "canadian": "C$"
+  "aud": "A$",
+  "gbp": "£",
+  "cad": "C$"
 }

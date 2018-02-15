@@ -7,25 +7,28 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12" id="formdiv">
-          <form class="form-group">
-            <label for="startingMoney">Please enter however much of your starting currency you'd like to convert.</label>
-            <input class="form-control" type=number id="startingMoney" placeholder="Money please!"></input>
-            <label for="startingCountry">Converting from:</label>
-            <select class="form-control" id= "startingCountry">
-              <option value="usd">Dollars (American)</option>
-              <option value="euro">Euros</option>
-              <option value="gbp">British Pounds</option>
-              <option value="aud">Dollars (Australian)</option>
-              <option value="cad">Dollars (Canadian)</option>
-            </select>
-            <label for="endingCountry">to:</label>
-            <select class="form-control" id="endingCountry">
-              <option value="usd">Dollars (American)</option>
-              <option value="euro">Euros</option>
-              <option value="gbp">British Pounds</option>
-              <option value="aud">Dollars (Australian)</option>
-              <option value="cad">Dollars (Canadian)</option>
-            </select>
+          <form class="form-horizontal" id="cashForm">
+            <div class="form-group">
+              <label for="startingMoney">Please enter however much of your starting currency you'd like to convert.</label>
+              <input class="form-control" type=number id="startingMoney" placeholder="Money please!"></input>
+              <label for="startingCountry">Converting from:</label>
+              <select class="form-control" id= "startingCountry">
+                <option value="usd">Dollars (American)</option>
+                <option value="euro">Euros</option>
+                <option value="gbp">British Pounds</option>
+                <option value="aud">Dollars (Australian)</option>
+                <option value="cad">Dollars (Canadian)</option>
+              </select>
+              <label for="endingCountry">to:</label>
+              <select class="form-control" id="endingCountry">
+                <option value="usd">Dollars (American)</option>
+                <option value="euro">Euros</option>
+                <option value="gbp">British Pounds</option>
+                <option value="aud">Dollars (Australian)</option>
+                <option value="cad">Dollars (Canadian)</option>
+              </select>
+            </div>
+            <button type="submit" id="formButton">Change it</button>
           </form>
         </div>
       </div>
